@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./yey.styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">OMG!!! i can&apos;t believe that I have a girlfriend and not just any girlfriend IT&apos;s YOU!!</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWIxdm52NXc0bG12dWUyNDBsNDR0NWsxc2VkcmYzdHh3cW53dXhoaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yl3xCL7IMbMxwscPlm/giphy.webp" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">&#129325</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">I couldn&apos;t say no &#128580</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "leave.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
